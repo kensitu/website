@@ -25,4 +25,16 @@ $(document).ready(function(){
           $('#ResumeLink').css('background-color', 'transparent');
        }
    });
+
+   $('#back-to-top-arrow').hover(
+       function(){ 
+        $(this).removeClass('fa fa-arrow-up');
+        $(this).addClass('fa fa-arrow-circle-up');
+        },
+
+       function(){ 
+        $(this).removeClass('fa fa-arrow-circle-up');
+        $(this).addClass('fa fa-arrow-up');
+      }
+  );
 });
