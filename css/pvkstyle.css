@@ -1,43 +1,85 @@
+/*-------------------------------*/
+/* General                       */
+
 html,body {
 	height: 100%;
 	padding: 0;
 	margin: 0;
 }
 
+p {
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.3vw;
+}
+
+.titlefont {
+    font-family: 'Comfortaa', cursive;
+}
+
+.line {
+    width: 100%;
+    border-top: 6px solid #8BC34A;
+    margin: 0;
+}
+
+
+/*-------------------------------*/
+/* Header                        */
+
 #header {
 	
 }
 
-#headerimg {
+#bg {
 	background-color: black;
-	/*position: absolute;*/
-	/*top: 0;*/
-	/*left: 0;*/
+	position: fixed;
+	top: 0;
+	left: 0;
 	z-index: -1;
 }
 
-#headerimg img {
-	opacity: 0.3;
+
+
+#bg video {
+	opacity: 0.2;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+
+
+#downarrow {
+    color: #DDD;
+    font-size: 3vw;
+    margin: 6% 44%;
 }
 
 #logoaward{
-	margin: 0px;
-	margin-left: 10%;
-	padding: 0px;
 }
 
 #headertxt {
-	font-family: Lato, sans-serif;
-	font-size: 3vw;
+	font-family: 'Josefin Slab', serif;
+	font-size: 2vw;
+    font-weight: 100;
 	color: white;
-	margin: 8% 0 8% 5%;
-    padding: 0;
+    padding: 0 8%;
+    text-align: center;
 }
 
 #title {
-	margin: 10% 0 0 0;
-	position: absolute;
-	z-index: 10;
+	padding: 8% 30% 0;
+}
+
+/*-------------------------------*/
+/* At a glance                   */
+
+
+#vid-ataglance {
+    margin: 0 0 2% 0;
+}
+
+#vid-ataglance .col-xs-6 {
+    padding: 0;
 }
 
 .vid-container {
@@ -57,13 +99,87 @@ html,body {
     height: 100%;
 }
 
-#about {
-	background-color: #EEFFED;
+#ataglance {
+    margin-top: 4%;
+    padding: 0;
+    float: right;
+
+}
+
+#ataglance table {
+    white-space: nowrap;
+}
+
+#ataglance h1 {
+    font-size: 3vw;
+    margin: 0% 0% 0% 3%;
+}
+
+#ataglance td {
+    padding: 4%;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.3vw;
+    /*width: 8%;*/
+}
+
+#ataglance th {
+    padding: 4% 18% 4% 4%;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.3vw;
+    /*width: 3%;*/
+    vertical-align: top;
+}
+
+#ataglance th i {
+    margin-right: 5%;
+}
+
+
+
+#section1 {
+	/*background-color: #EEFFED;*/
+    background-color: #FFF;
+    padding: 8.33%;
+}
+
+
+/*-----------------------------
+    Kosbie Johnson is Average Joe
+ */
+
+#section2 {
+    /*background-color: #D9FDE7;*/
+    background-color: transparent;
+    padding: 8.33%;
+    color: #FFF;
+}
+
+#section2 .col-xs-6 {
+    float: right;
+}
+
+#section2 h1 {
+    margin: 0;
+    margin-bottom: 4%;
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+
+#section2 .description {
+    margin: 15% 0;
 }
 
 #pvkart {
 	padding: 8% 0 0 8%
 }
+
+#section2 .line {
+    position: relative;
+    left: -30%;
+    width: 130%;
+}
+
+
 
 #githubplug {
 	float: right;
@@ -74,10 +190,19 @@ html,body {
 	margin: 0 5px 0 0;
 	display: inline-block;
 	font-size: 2.5vw;
-	font-family: bebas_neueregular, sans-serif;
+
 }
 
 #githubplug > img {
 	display: inline-block;
 	height: 5vw;
+}
+
+
+div#desc-container {
+	margin: 0;
+}
+
+div#desc-container h1 {
+	font-size: 6vw;
 }
