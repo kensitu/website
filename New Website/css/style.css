@@ -1,0 +1,92 @@
+/*----------------------------------------*/
+/* General */
+
+html {
+    background-color: white;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity .6s ease-in-out; 
+}
+
+.is-spaced {
+    letter-spacing: 5px;
+}
+
+hr {
+    height: 4px;
+    border: none;
+    background-color: #D05454;
+
+}
+/*----------------------------------------*/
+/* Navbar */
+
+.nav {
+    margin-top: 3%;
+}
+
+a.nav-item.is-tab {
+    margin-left: 4%;
+    font-size: 1.1em;
+    padding: 0;
+    font-weight: 300;
+
+}
+
+/*----------------------------------------*/
+/* Header */
+
+#kenvector {
+    margin-top: 8%;
+    width: 12em;
+    height: auto;
+}
+
+.vecline {
+    stroke: #D05454;
+    fill: none;
+}
+
+#name {
+    font-family: 'Rock Salt', 'Dancing Script', 'Helvetica Neue', sans-serif;
+    font-size: 5em;
+    color: black;
+    line-height: inherit;
+}
+
+#role {
+    color: #69707a;
+    font-family: 'Lato', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    line-height: 160%;
+}
+
+#branch {
+    width: 62%;
+    position: relative;
+    top: -3vw;
+    z-index: -1;
+}
+
+/*---------------------------------------*/
+/* Portfolio */
+
+#portfolio {
+    padding: 50px;
+}
+
+#selected-works-text {
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    border: #D05454 solid;
+}
