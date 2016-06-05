@@ -21,7 +21,7 @@ html {
 hr {
     height: 4px;
     border: none;
-    background-color: #D05454;
+    background-color: #df4e4e;
 
 }
 /*----------------------------------------*/
@@ -29,6 +29,10 @@ hr {
 
 .nav {
     margin-top: 3%;
+}
+
+nav .container {
+    padding-right: 50px;
 }
 
 a.nav-item.is-tab {
@@ -49,7 +53,7 @@ a.nav-item.is-tab {
 }
 
 .vecline {
-    stroke: #D05454;
+    stroke: #df4e4e;
     fill: none;
 }
 
@@ -72,7 +76,7 @@ a.nav-item.is-tab {
     width: 62%;
     position: relative;
     top: -3vw;
-    z-index: -1;
+    z-index: 1;
 }
 
 /*---------------------------------------*/
@@ -80,13 +84,133 @@ a.nav-item.is-tab {
 
 #portfolio {
     padding: 50px;
+    padding-top: 0;
 }
 
 #selected-works-text {
     position: relative;
     overflow: hidden;
+    text-align: center;
+    margin-bottom: 8%;
+
 }
 
-.image {
-    border: #D05454 solid;
+#selected-works-text:before,
+#selected-works-text:after {
+    display: inline-block;
+    content: "";
+    height: 2px;
+    background: #D05454;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+
+#selected-works-text:before {
+    right: 70%;
+}
+
+#selected-works-text:after {
+    left: 70%;
+}
+
+#portfolio .level-left {
+    margin: 0 10px 0 0;
+}
+
+#portfolio .level-right {
+    margin: 0 0 0 10px;
+}
+
+figure.effect-goliath {
+    background: #df4e4e;
+}
+
+figure.effect-goliath img,
+figure.effect-goliath h2 {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+figure.effect-goliath img {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+figure.effect-goliath h2,
+figure.effect-goliath p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 30px;
+}
+
+figure.effect-goliath p {
+    text-transform: none;
+    font-size: 90%;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,50px,0);
+    transform: translate3d(0,50px,0);
+    color: white;
+    text-transform: uppercase;
+}
+
+figure.effect-goliath:hover img {
+    -webkit-transform: translate3d(0,-80px,0);
+    transform: translate3d(0,-80px,0);
+}
+
+figure.effect-goliath:hover a {
+    -webkit-transform: translate3d(0,-80px,0);
+    transform: translate3d(0,-80px,0);
+}
+
+figure.effect-goliath:hover h2 {
+    -webkit-transform: translate3d(0,-100px,0);
+    transform: translate3d(0,-100px,0);
+}
+
+figure.effect-goliath:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.grid figure {
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0 0 0;
+
+}
+
+figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+/*-------------------------------------------*/
+/* Footer */
+.footer {
+    background-color: transparent;
+}
+
+.footer p {
+    font-size: .9em;
+    font-weight: 100;
 }
