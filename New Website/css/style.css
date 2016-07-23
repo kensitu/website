@@ -2,7 +2,7 @@
 /* General */
 
 html {
-    background-color: white;
+    background-color: #f1efe5;
 }
 
 .hidden {
@@ -11,7 +11,7 @@ html {
 
 .visible {
     opacity: 1;
-    transition: opacity .6s ease-in-out; 
+    transition: opacity .6s ease-in-out, top .6s ease-in-out; 
 }
 
 .is-spaced {
@@ -22,13 +22,34 @@ hr {
     height: 4px;
     border: none;
     background-color: #df4e4e;
+}
+
+.section {
+    background-color: transparent;
+}
+
+.title {
+    color: #df4e4e;
+    font-size: 36px;
+}
+
+.subtitle {
 
 }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*                                  Index                                     */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
 /*----------------------------------------*/
 /* Navbar */
 
 .nav {
     margin-top: 3%;
+    margin-bottom: 8%;
+    background-color: transparent;
 }
 
 nav .container {
@@ -47,7 +68,6 @@ a.nav-item.is-tab {
 /* Header */
 
 #kenvector {
-    margin-top: 8%;
     width: 12em;
     height: auto;
 }
@@ -58,10 +78,11 @@ a.nav-item.is-tab {
 }
 
 #name {
-    font-family: 'Rock Salt', 'Dancing Script', 'Helvetica Neue', sans-serif;
+    font-family: 'Rock Salt', 'Helvetica Neue', sans-serif;
     font-size: 5em;
     color: black;
     line-height: inherit;
+    margin-bottom: 20px;
 }
 
 #role {
@@ -79,6 +100,24 @@ a.nav-item.is-tab {
     z-index: 1;
 }
 
+#branch-top {
+    width: 62%;
+    position: absolute;
+    top: -3vw;
+}
+
+i.fa.fa-angle-double-down {
+    font-size: 3em;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(20px);}
+    100% {transform: translateY(0px);}
+    
+}
+
 /*---------------------------------------*/
 /* Portfolio */
 
@@ -92,6 +131,9 @@ a.nav-item.is-tab {
     overflow: hidden;
     text-align: center;
     margin-bottom: 8%;
+    color: #222324;
+    font-size: 1.2em;
+    font-weight: 300;
 
 }
 
@@ -213,4 +255,40 @@ figcaption > a {
 .footer p {
     font-size: .9em;
     font-weight: 100;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*                                  Works                                     */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.heading {
+    text-transform: none;
+    padding-top: 10%;
+    margin: 0;
+}
+
+
+
+#laptop {
+    width: 80%;
+}
+
+#pvkscreen {
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 11%;
+}
+
+.laptop-container {
+    position: relative;
+}
+
+.button {
+    margin: 5% 0;
+}
+#insights {
+    background-color: #df4e4e;
+    margin-top: -5vh;
 }

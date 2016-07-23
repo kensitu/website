@@ -27,6 +27,7 @@ $(document).ready(function(){
 
   $("#intro").addClass('hidden');
   $('#branch').addClass('hidden');
+
   $('.nav').addClass('hidden');
 
   // Defining our draw and reset functions
@@ -65,8 +66,9 @@ $(document).ready(function(){
   $("#intro")
     .on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",
       function(){
-        $('#branch').removeClass('hidden')
-        $('#branch').addClass('visible')
+        $('#branch').removeClass('hidden');
+        $('#branch').addClass('visible');
+        $('#branch').attr('data-parallax','{"y" : -100}');
       });
 
   reset();
