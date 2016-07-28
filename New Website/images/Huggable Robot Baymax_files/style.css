@@ -268,36 +268,7 @@ figcaption > a {
     margin: 0;
 }
 
-.button {
-    margin: 5%;
-}
 
-.main-body {
-    background-color: #df4e4e;
-    overflow: hidden;
-}
-
-.go-left {
-    float: left;
-}
-
-.go-right {
-    float: right;
-}
-
-.subheading {
-    margin: 10% 0;
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-/* --------------------------------------*/
-/* Pants vs Kosbie */
-
-#insights {
-    margin-top: -5vh;
-}
 
 #laptop {
     width: 80%;
@@ -314,12 +285,18 @@ figcaption > a {
     position: relative;
 }
 
+.button {
+    margin: 5%;
+}
 
-/*--------------------------------------*/
-/* Baymax */
-
+#insights {
+    background-color: #df4e4e;
+    margin-top: -5vh;
+    z-index: 2;
+}
 
 #skele {
+    /*box-shadow: 0px -4px 4px 0px rgba(0,0,0,0.50);*/
 
     -webkit-filter: drop-shadow(0px -4px 4px rgba(0,0,0,0.5));
     filter: url(#drop-shadow);
@@ -327,50 +304,5 @@ figcaption > a {
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=-4, Color='#444')";
 
     position: relative;
-    top: 4px;
-}
-
-#baymax-desc {
-    padding-bottom: 0;
-}
-
-/*--------------------------------------*/
-/* Designs */
-
-.gallery {
-  width: 100%;
-  text-align: center;
-}
-.gallery img {
-  max-width: 100%;
-  box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.50);
-}
-.gallery figure {
-  margin: 15px;
-  display: inline-block;
-  position: relative;
-}
-
-.square-fig {
-    width: 40%;
-}
-
-#ASA-main-logo {
-    margin: 40px 0;
-}
-
-.row {
-    display: block;
-}
-
-#award-fig{
-    width: 26%;
-}
-
-#shirts-fig {
-    width: 53%;
-}
-
-.banner-fig {
-    margin: 0;
+    top: -4px;
 }
