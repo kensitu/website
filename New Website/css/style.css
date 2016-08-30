@@ -428,9 +428,10 @@ figcaption > a {
     padding: 20vh 0;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1180px) {
     #ken-cutout {
-        top: 26em;
+        top: 22em;
+        max-width: 30%;
     }
 
     #about-section {
@@ -440,4 +441,18 @@ figcaption > a {
 
 #about-content {
     padding: 35% 5%;
+}
+
+#about-content i {
+    margin: 40px;
+    color: white;
+}
+
+
+/*-------------------------------*/
+/* EDITOR */
+
+#editor-img {
+    padding: 5% 5% 0 5%;
+    margin-bottom: -4px
 }

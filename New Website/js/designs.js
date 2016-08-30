@@ -256,7 +256,7 @@ $(document).ready(function(){
         var bottom_of_window = $(window).scrollTop() + $(window).height();
         var slack = 200; //the amouth of slack given before the element is visible
         if( bottom_of_window > bottom_of_object - slack ){
-            $(this).fadeTo(1000,1); 
+            $(this).fadeTo(800,1); 
         }
         
     }); 
@@ -278,7 +278,7 @@ $(document).ready(function(){
             /* fade it in */
             if( bottom_of_window > bottom_of_object - slack ){
                 
-                $(this).fadeTo(1000,1);
+                $(this).fadeTo(800,1);
                     
             }
             
@@ -286,5 +286,5 @@ $(document).ready(function(){
     });
 
     //Fade ASA logo
-    $('#ASA-main-logo').fadeTo(1000,1);
+    $('#ASA-main-logo').fadeTo(800,1);
 });
